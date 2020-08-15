@@ -1,7 +1,14 @@
 #include "AtvPratica01-Pt2.h"
+#include "AtvPratica01-Pt1-1.h"
 
 int main()
 {
+
+    std::cout<<"------------------"<<endl;
+    std::cout<<"Exercicio 1.1"<<endl;
+    countBlanks();
+    std::cout<<"------------------"<<endl;
+
     Matriz A, B, R;
 
     std::cout<<"A:: "<<std::endl;
