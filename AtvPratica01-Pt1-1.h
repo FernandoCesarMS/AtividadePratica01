@@ -37,7 +37,7 @@ void countBlanks (){
         cout<<"nao foi possivel abrir o arquivo"<< endl;
     }
 
-    cout<<a<<endl;
+    cout<<"Numero de espacos em branco:"<<a<<endl;
 
 
 
