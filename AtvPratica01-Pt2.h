@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 using namespace std;
 typedef struct
 {
@@ -21,7 +22,7 @@ void inicializaMatriz(Matriz &X, int ls, int cs)
     {
         for (int j = 0; j < cs; j++)
         {
-            int aleatorio = rand()%(10);
+            int aleatorio = rand() % (10);
             X.m[i][j] = aleatorio;
         }
     }
@@ -62,12 +63,8 @@ void transposta(Matriz &X)
     for (int i = 0; i < aux.nLinhas; i++)
         aux.m[i] = new double[aux.nColunas];
     for (int i = 0; i < aux.nLinhas; i++)
-    {
         for (int j = 0; j < aux.nColunas; j++)
-        {
             aux.m[i][j] = X.m[j][i];
-        }
-    }
     X = aux;
 }
 void imprimeMatriz(Matriz &X)
